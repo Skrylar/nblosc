@@ -1,8 +1,9 @@
 const
   bloscheader = "<blosc.h>"
-  blosc_so = "libblosc.so.1.14"
 
-{.pragma: blosc, cdecl, dynlib: blosc_so, header: bloscheader.}
+{.passL: "-lblosc".}
+
+{.pragma: blosc, cdecl, header: bloscheader.}
 
 const
   BLOSC_VERSION_MAJOR*           = 1
