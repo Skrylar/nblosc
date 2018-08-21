@@ -3,13 +3,13 @@ const
 
 {.passL: "-lblosc".}
 
-{.pragma: blosc, cdecl, header: bloscheader.}
+{.pragma: blosc, cdecl, dynlib: "libblosc.so", header: bloscheader.}
 
 const
   BLOSC_VERSION_MAJOR*           = 1
   BLOSC_VERSION_MINOR*           = 14
   BLOSC_VERSION_RELEASE*         = 3
-  BLOSC_VERSION_STRING*          = "1.14.3" 
+  BLOSC_VERSION_STRING*          = "1.14.3"
   BLOSC_VERSION_REVISION*        = "$Rev$"
   BLOSC_VERSION_DATE*            = "$Date:: 2018-04-06 #$"
   BLOSCLZ_VERSION_STRING*        = "1.1.0"
