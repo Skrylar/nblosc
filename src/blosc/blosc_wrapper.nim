@@ -1,11 +1,4 @@
 const
-  bloscheader = "<blosc.h>"
-
-{.passL: "-lblosc".}
-
-{.pragma: blosc, cdecl, dynlib: "libblosc.so", header: bloscheader.}
-
-const
   BLOSC_VERSION_MAJOR*           = 1
   BLOSC_VERSION_MINOR*           = 14
   BLOSC_VERSION_RELEASE*         = 3
